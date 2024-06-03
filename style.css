@@ -203,8 +203,8 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     font-family: 'poppins', sans-serif;
     font-weight: 100;
     position: relative;
-   /* left: -50%;*/
-   left: 0;
+    left: -50%;
+    /*left: 0;*/
     width: 100%;
     background: #090909;
     display: flex;
@@ -308,6 +308,6 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
 }
 
 .quiz-footer .next-btn:hover{ /*altera o next do play*/
-background: #950170;
-border-color: #950170;
+    background: #950170;
+    border-color: #950170;
 }
