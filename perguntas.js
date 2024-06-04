@@ -3,7 +3,6 @@ let questions = [
         numb: 1,
         question: "Qual das seguintes opções é uma fonte comum de poluição do ar em áreas urbanas?",
         answer: "A) Centrais hidroelétricas",
-        answer: "B) Emissões de veículos",
         options: [
            "A) Centrais hidroelétricas" ,
             "B) Emissões de veículos" ,
@@ -16,7 +15,6 @@ let questions = [
         numb: 2,
         question: "Qual é o principal componente dos resíduos plásticos encontrados nos oceanos?",
         answer: "A) Polietileno",
-        answer: "B) Vidro",
         options: [
         "A) Polietileno",
         "B) Vidro",
@@ -28,7 +26,6 @@ let questions = [
         numb: 3,
         question: "Qual das seguintes práticas ajuda a reduzir a poluição do solo?",
         answer: "A) Uso de pesticidas em excesso",
-        answer: "B) Descarte inadequado de lixo eletrônico",
         options: [
         "A) Uso de pesticidas em excesso",
         "B) Descarte inadequado de lixo eletrônico",
@@ -41,7 +38,6 @@ let questions = [
         numb: 4,
         question: "Qual das seguintes alternativas é um exemplo de energia renovável?",
         answer: "A) Carvão",
-        answer: "B) Gás natural",
         options: [
         "A) Carvão",
         "B) Gás natural",
@@ -53,7 +49,6 @@ let questions = [
         numb: 5,
         question: "Qual é uma das consequências da poluição da água em ecossistemas aquáticos?",
         answer: "A) Aumento da biodiversidade",
-        answer: "B) Crescimento excessivo de algas (eutrofização)",
         options: [
             "A) Aumento da biodiversidade",
             "B) Crescimento excessivo de algas (eutrofização)",

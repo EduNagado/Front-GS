@@ -203,7 +203,7 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     font-family: 'poppins', sans-serif;
     font-weight: 100;
     position: relative;
-    left: -50%;
+    left: 50%;
     /*left: 0;*/
     width: 100%;
     background: #090909;
@@ -279,6 +279,12 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     border-color: rgba(255, 255, 255, .1);
 }
 
+.option-list .option.correct {
+    background: #090909;
+    color: #00a63d; /*MUDAR A COR DOS ACERTOS*/
+    border-color: #00a63d;
+}
+
 .quiz-box .quiz-footer{
     display: flex;
     justify-content: space-between;
@@ -304,6 +310,7 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     color: rgba(255, 255, 255, .3);
     font-weight: 600;
     cursor: pointer;
+    /*pointer-events: none;*/
     transition: .5s;
 }
 
