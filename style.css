@@ -206,7 +206,9 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     left: 50%;
     /*left: 0;*/
     width: 100%;
-    background: #090909;
+    background-image: url(wp2074447\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
