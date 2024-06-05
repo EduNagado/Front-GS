@@ -141,7 +141,7 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
 
 .popup-info h2{
     font-size: 50px;
-    color: rgb(51, 189, 124);
+    color: rgb(23, 98, 197);
 }
 
 .popup-info .info{
@@ -167,8 +167,8 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     align-items: center;
     width:130px ;
     height: 45px;
-    background:#c738cc;
-    border: 2px solid #c738cc;
+    background:#7149bb;
+    border: 2px solid #7149bb;
     outline: none;
     border-radius: 6px;
     text-decoration: none;
@@ -182,17 +182,17 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
 
 .popup-info .btn-group .info-btn:nth-child(1){
     background: transparent;
-    color: #c738cc;
+    color: #4122cc;
 }
 
 .popup-info .btn-group .info-btn:nth-child(1):hover {
-    background: #c738cc;
+    background: #2a6bf7;
     color: #fff;
 }
 
 .popup-info .btn-group .info-btn:nth-child(2):hover {
-    background: #950170;
-    border-color:#950170 ;
+    background: #2a6bf7;
+    border-color: #2a6bf7;
 }
 
 
@@ -284,6 +284,18 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     color: #00a63d; /*MUDAR A COR DOS ACERTOS*/
     border-color: #00a63d;
 }
+
+.option-list .option.incorrect {
+    background: #090909;
+    color: #520b0b; /*MUDAR A COR DOS ACERTOS*/
+    border-color: #69050d;
+}
+
+.option-list .option.incorrect.disabled{
+    pointer-events: none;
+
+}
+
 
 .quiz-box .quiz-footer{
     display: flex;

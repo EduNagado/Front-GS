@@ -37,7 +37,9 @@ let questions = [
     {
         numb: 4,
         question: "Qual das seguintes alternativas é um exemplo de energia renovável?",
-        answer: "A) Carvão",
+        answer:"A) Carvão",
+        answer: "B) Gás natural",
+
         options: [
         "A) Carvão",
         "B) Gás natural",

@@ -49,7 +49,7 @@ const optionList = document.querySelector('.option-list');
 function showQuestions(index) {
   const questionText = document.querySelector('.question-text');
   questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
-  
+
 
   let optionTag = `<div class="option"><span>${questions[index].options[0]}</span></div>
     <div class="option"><span>${questions[index].options[1]}</span></div>
@@ -65,15 +65,20 @@ function showQuestions(index) {
 }
 
 function optionSelected(answer){
-    let userAnswer = answer.textContent;
-    let correctAnswer = questions[questionCount].answer;
+  let userAnswer = answer.textContent;
+  let correctAnswer = questions[questionCount].answer;
+  let allOptions = optionList.children.length;
    
-
     if (userAnswer == correctAnswer){
         answer.classList.add('correct');
     }
     else{
       answer.classList.add('incorrect');
+    }
+
+    //if user has seLected, disable all options
+    for (let i =0; i <allOptions; i++){
+      optionList.children[i].classList.add('disabled')
     }
 }
 
