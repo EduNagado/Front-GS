@@ -203,8 +203,7 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     font-family: 'poppins', sans-serif;
     font-weight: 100;
     position: relative;
-    /*left: 50%;*/
-    left: 0;
+    left: 50%;
     width: 100%;
     background-image: url(wp2074447\ \(1\).jpg);
     background-repeat: no-repeat;
@@ -230,8 +229,21 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     display: flex;
     flex-direction: column;
     padding: 20px 37px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.9);
     backdrop-filter: blur(20px);
     background: transparent;
+    transition: .3s ease;
+    transition-delay:0s ;
+}
+
+.quiz-section .quiz-box.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: 1s ease;
+    transition-delay:1s ;
 }
 
 .quiz-box h1{
@@ -348,7 +360,7 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(.9);
     width: 500px;
     background: transparent;
     border: 2px solid #2a6bf7;
@@ -357,8 +369,97 @@ text-shadow: 0 0 10px rgba(0, 0, 0, .3) ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;;
+}
+
+.quiz-section .result-box.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .result-box h2{
-    font-size: ;
+    font-size:52px ;
+}
+
+.result-box .porcentagem-container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px;
+}
+
+.porcentagem-container .circular-progress {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(#2a6bf7 3.6deg, rgba(255, 255, 255, .1) 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porcentagem-container .circular-progress::before{
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: #09001d;
+    border-radius: 50%;
+}
+
+.circular-progress .progress-value{
+    position: relative;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.porcentagem-container .score-text {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top:20px ;
+}
+
+.text-diagnosis{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top:18px ;  
+}
+
+.result-box .buttons{
+    display: flex;
+}
+
+.buttons button{
+    width: 130px;
+    height: 47px;
+    background:#4a0f97 ;
+    border: 2px solid #4a0f97;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 20px 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.buttons button:nth-child(1):hover{
+    background:#4a0f97 ;
+    border-color: #4a0f97;
+}
+
+.buttons button:nth-child(2){
+    background: transparent;
+    color:#4a0f97 ;
+}
+
+.buttons button:nth-child(2):hover{
+    background: #4a0f97;
+    color: #fff;
 }
