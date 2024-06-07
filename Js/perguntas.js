@@ -2,7 +2,7 @@ let questions = [
     {
         numb: 1,
         question: "Com que frequência você usa produtos que contém plástico??",
-        answer: ["A) Emissões de veículos", "B) Centrais hidroelétricas"], // Duas respostas corretas
+        answer: ["A) Nunca", "B) Raramente"], 
         options: [
             "A) Nunca",
             "B) Raramente",
@@ -12,46 +12,46 @@ let questions = [
     },
     {
         numb: 2,
-        question: "Qual é o principal componente dos resíduos plásticos encontrados nos oceanos?",
-        answer: ["A) Polietileno", "B) Polipropileno"], // Duas respostas corretas
+        question: "Com que frequência você joga lixo nas ruas, sabendo que isso pode acabar nos oceanos?",
+        answer: ["A) Nunca", "B) Raramente"],
         options: [
-            "A) Polietileno",
-            "B) Polipropileno",
-            "C) Alumínio",
-            "D) Papelão"
+            "A) Nunca",
+            "B) Raramente",
+            "C) Às vezes",
+            "D) Frequentemente"
         ]
     },
     {
         numb: 3,
-        question: "Qual das seguintes práticas ajuda a reduzir a poluição do solo?",
-        answer: ["C) Compostagem de resíduos orgânicos", "A) Uso de pesticidas em excesso"], // Duas respostas corretas
+        question: "Com que frequência você recicla o lixo plástico em sua casa?",
+        answer: ["C) Às vezes", "D) Frequentemente"], 
         options: [
-            "A) Uso de pesticidas em excesso",
-            "B) Descarte inadequado de lixo eletrônico",
-            "C) Compostagem de resíduos orgânicos",
-            "D) Queima de resíduos agrícolas"
+            "A) Nunca",
+            "B) Raramente",
+            "C) Às vezes",
+            "D) Frequentemente"
         ]
     },
     {
         numb: 4,
-        question: "Qual das seguintes alternativas é um exemplo de energia renovável?",
-        answer: ["C) Energia eólica", "A) Carvão"], // Duas respostas corretas
+        question: "Você utiliza sacolas reutilizáveis ao fazer compras?",
+        answer: ["C) Às vezes", "D) Sempre"],
         options: [
-            "A) Carvão",
-            "B) Gás natural",
-            "C) Energia eólica",
-            "D) Petróleo"
+            "A) Nunca",
+            "B) Raramente",
+            "C) Às vezes",
+            "D) Sempre"
         ]
     },
     {
         numb: 5,
-        question: "Qual é uma das consequências da poluição da água em ecossistemas aquáticos?",
-        answer: ["B) Crescimento excessivo de algas (eutrofização)", "D) Expansão dos habitats de peixes"], // Duas respostas corretas
+        question: "Você evita comprar produtos embalados em plástico sempre que possível?",
+        answer: ["C) Às vezes", "D) Sempre"],
         options: [
-            "A) Aumento da biodiversidade",
-            "B) Crescimento excessivo de algas (eutrofização)",
-            "C) Melhoria na qualidade da água potável",
-            "D) Expansão dos habitats de peixes"
+            "A) Nunca",
+            "B) Raramente",
+            "C) Às vezes",
+            "D) Sempre"
         ]
     }
 ];
