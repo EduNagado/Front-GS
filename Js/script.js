@@ -155,12 +155,12 @@ function showResultBox() {
 
 function displayDiagnosisText(score) {
     if (score === 0) {
-        diagnosisText.textContent = "Você precisa aprender mais sobre a conservação ambiental. Considere estudar sobre os impactos ambientais e práticas sustentáveis.";
+        diagnosisText.textContent = " Comece evitando plásticos e reciclando. Juntos, podemos proteger nossos oceanos. Vamos mudar isso!";
     } else if (score <= 2) {
-        diagnosisText.textContent = "Você está no caminho certo, mas ainda há espaço para melhorar. Continue aprendendo e aplicando práticas sustentáveis.";
+        diagnosisText.textContent = "Continue reduzindo plásticos e participe de ações de limpeza. Cada pequena ação conta";
     } else if (score <= 4) {
-        diagnosisText.textContent = "Bom trabalho! Você tem um bom conhecimento sobre meio ambiente. Continue assim e inspire outros a adotarem práticas sustentáveis.";
+        diagnosisText.textContent = "Excelente trabalho. Continue informando-se e participando de campanhas. Juntos, podemos proteger nossos oceanos!";
     } else {
-        diagnosisText.textContent = "Excelente! Você tem um conhecimento sólido sobre a conservação ambiental. Continue sendo um exemplo positivo para todos.";
+        diagnosisText.textContent = "Seu conhecimento e ações são inspiradores. Continue fazendo a diferença pelos oceanos!";
     }
 }
