@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #090909);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #1ed1c8;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/FundoHome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    transition: .3s ease;
+}
+
+.main.active {
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+.top-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-logo-tipo2 {
+    width: 120px;
+}
+
+.top-logo-tipo2 img {
+    width: 100px;
+}
+
+nav.navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(233, 232, 232);
+    border-radius: 15px;
+}
+
+nav.navegacao a {
+    text-decoration: none;
+    color: rgb(62, 61, 61);
+    margin: 9px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 30px;
+    padding: 2px;
+}
+
+nav.navegacao a:hover {
+    font-weight: bold;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.text-img-sobre {
+    margin: 40px;
+}
+
+.img-sobre {
+    width: 300px;
+    border-radius: 14px;
+}
+
+.text-sobre p {
+    margin: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+.git-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    padding: 2px;
+    border-radius: 30px;
+}
+
+.git-button:hover {
+    background-color: rgb(164, 163, 163);
+}
+
+.git-button img {
+    width: 40px;
+}
+
+.link-sobre {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.git-button p {
+    margin: 2px;
+    color: rgb(37, 38, 38);
+}
+
+.centralizar-link-repositorio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.div-link-repositorio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: rgb(209, 209, 209);
+    padding: 2px;
+    border-radius: 30px;
+}
+
+.div-link-repositorio img {
+    width: 50px;
+}
+
+.link-repositorio {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 30px;
+    color: rgb(37, 38, 38);
+}
+
+.div-link-repositorio:hover {
+    background-color: rgb(164, 163, 163);
+}
+
+/* Media Queries */
+
+/* Estilos para desktop */
+@media (max-width:1199px) and (min-width: 992px) {
+    .top-logo-tipo2 {
+        width: 150px;
+    }
+
+    .top-logo-tipo2 img {
+        width: 120px;
+    }
+
+    .nav.navegacao a {
+        margin: 12px;
+        padding: 8px;
+    }
+}
+
+/* Estilos para tablets */
+@media (max-width: 991px) and (min-width: 767px) {
+    .top-logo-tipo2 {
+        width: 100px;
+    }
+
+    .text-img-sobre {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .img-sobre {
+        width: 200px;
+    }
+
+    .text-sobre p {
+        font-size: 14px;
+        margin: 3px;
+    }
+
+    .git-button p {
+        font-size: 12px;
+    }
+
+    .div-link-repositorio {
+        width: 400px;
+    }
+
+    .link-repositorio {
+        font-size: 20px;
+    }
+
+    .nav.navegacao a {
+        margin: 9px;
+        padding: 2px;
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 765px) {
+    .top-logo-tipo2 {
+        width: 80px;
+    }
+
+    .top-logo-tipo2 img {
+        width: 60px;
+    }
+
+    .nav.navegacao a {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .text-img-sobre {
+        margin: 10px; 
+    }
+
+    .img-sobre {
+        width: 150px; 
+    }
+
+    .text-sobre p {
+        font-size: 12px; 
+    }
+
+    .git-button p {
+        font-size: 10px; 
+    }
+
+    .div-link-repositorio {
+        width: 300px; /
+    }
+
+    .link-repositorio {
+        font-size: 16px; 
+    }
+}
+
