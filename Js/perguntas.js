@@ -1,13 +1,13 @@
 let questions = [
     {
         numb: 1,
-        question: "Qual das seguintes opções é uma fonte comum de poluição do ar em áreas urbanas?",
+        question: "Com que frequência você usa produtos que contém plástico??",
         answer: ["A) Emissões de veículos", "B) Centrais hidroelétricas"], // Duas respostas corretas
         options: [
-            "A) Emissões de veículos",
-            "B) Centrais hidroelétricas",
-            "C) Plantação de árvores",
-            "D) Usinas de energia solar"
+            "A) Nunca",
+            "B) Raramente",
+            "C) Às vezes",
+            "D) Frequentemente"
         ]
     },
     {
