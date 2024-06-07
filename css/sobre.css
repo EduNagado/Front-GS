@@ -344,6 +344,7 @@ nav.navegacao a:hover {
         margin: 50px auto;
     }
     .text-img-sobre {
+        width: 200px;
         margin: 40px;
         text-align: left;
     }
@@ -355,4 +356,27 @@ nav.navegacao a:hover {
         width: 200px;
         height: 50px;
     }
-}    
+}
+
+@media (max-width: 1406px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .centralizar-link-repositorio {
+        margin: 0;
+    }
+}
+
+@media (max-width: 875px) {
+    .text-img-sobre{
+        width: 179px;
+    }
+    .text-img-sobre img {
+        max-width:200px;
+    }
+
+    .side {
+        width: 150px;
+    }
+}

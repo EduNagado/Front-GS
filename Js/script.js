@@ -1,3 +1,15 @@
+window.watsonAssistantChatOptions = {
+    integrationID: "09d2f796-266f-4e2c-8aa8-4e8c44fd728d",
+    region: "us-south", 
+    serviceInstanceID: "5b31a3d7-4e66-44fb-82eb-9cac9c8e158c", 
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
 const exitBtn = document.querySelector('.exit-btn');

@@ -1,7 +1,7 @@
 let questions = [
     {
         numb: 1,
-        question: "Com que frequência você usa produtos que contém plástico??",
+        question: "Com que frequência você usa produtos que contém plástico?",
         answer: ["A) Nunca", "B) Raramente"], 
         options: [
             "A) Nunca",
