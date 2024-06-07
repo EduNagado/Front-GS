@@ -255,111 +255,104 @@ nav.navegacao a:hover {
     border-bottom-right-radius: 11px;
     border-top-right-radius:  11px;
 }
-  
 
-
-
-
-
-
-
-
-
-/* Media Queries */
-
-/* Estilos para desktop */
-@media (max-width:1199px) and (min-width: 992px) {
-    .top-logo-tipo2 {
-        width: 150px;
-    }
-
-    .top-logo-tipo2 img {
-        width: 120px;
-    }
-
-    .nav.navegacao a {
-        margin: 12px;
-        padding: 8px;
-    }
-}
-
-/* Estilos para tablets */
-@media (max-width: 991px) and (min-width: 767px) {
-    .top-logo-tipo2 {
-        width: 100px;
-    }
-
-    .text-img-sobre {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 20px;
-    }
-
-    .img-sobre {
-        width: 200px;
-    }
-
-    .text-sobre p {
-        font-size: 14px;
-        margin: 3px;
-    }
-
-    .git-button p {
-        font-size: 12px;
-    }
-
-    .div-link-repositorio {
-        width: 400px;
-    }
-
-    .link-repositorio {
-        font-size: 20px;
-    }
-
-    .nav.navegacao a {
-        margin: 9px;
-        padding: 2px;
-    }
-}
-
-/* Estilos para dispositivos móveis */
+/*---------- Media Queries---------- */
+/* Tela móvel (até 765px) */
 @media (max-width: 765px) {
-    .top-logo-tipo2 {
-        width: 80px;
+    .header {
+        padding: 10px 2%;
     }
-
-    .top-logo-tipo2 img {
-        width: 60px;
+    .logo {
+        font-size: 24px;
     }
-
-    .nav.navegacao a {
-        margin: 5px;
+    .navbar {
+        font-size: 14px;
         padding: 5px;
     }
-
+    .imgs {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
     .text-img-sobre {
-        margin: 10px; 
+        margin: 10px;
+        text-align: center;
     }
-
-    .img-sobre {
-        width: 150px; 
+    .text-img-sobre img {
+        width: 150px;
     }
-
-    .text-sobre p {
-        font-size: 12px; 
+    .button-icon {
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
     }
-
-    .git-button p {
-        font-size: 10px; 
-    }
-
-    .div-link-repositorio {
-        width: 300px; /
-    }
-
-    .link-repositorio {
-        font-size: 16px; 
+    .button-icon .cube {
+        width: 100px;
+        height: 30px;
     }
 }
 
+/* Tablet (765px - 991px) */
+@media (max-width: 991px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 5%;
+        text-align: center;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .imgs {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .text-img-sobre {
+        margin: 20px;
+    }
+    .text-img-sobre img {
+        width: 200px;
+    }
+}
+
+/* Desktop (991px - 1140px) */
+@media (max-width: 1140px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 5%;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar a {
+        margin: 0 15px;
+        font-size: 18px;
+    }
+    .imgs {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        max-width: 1000px;
+        margin: 50px auto;
+    }
+    .text-img-sobre {
+        margin: 40px;
+        text-align: left;
+    }
+    .text-img-sobre img {
+        width: 250px;
+        border-radius: 14px;
+    }
+    .button-icon {
+        width: 200px;
+        height: 50px;
+    }
+}    
